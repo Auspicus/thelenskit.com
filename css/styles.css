@@ -80,8 +80,10 @@ html, body {
   text-decoration: initial;
   transition: all .3s ease;
   margin-right: 1rem;
+  border-radius: 5px;
 }
-.splash__button:hover {
+.splash__button:hover,
+.splash__button:focus {
   color: #212121;
   background: #fff;
 }
