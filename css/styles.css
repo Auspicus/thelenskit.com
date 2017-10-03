@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: Montserrat, sans-serif;
+  color: #3c3c3c;
 }
 
 /* Splash */
@@ -56,6 +57,7 @@ html, body {
 }
 
 .splash__subtitle {
+  font-weight: 400;
   font-size: 1rem;
   margin-bottom: 2rem;
 }
@@ -102,10 +104,65 @@ html, body {
 }
 
 .section {
-  max-width: 640px;
+  max-width: 720px;
   margin: auto;
 }
 .section__title {
+  text-align: center;
   font-size: 3rem;
 }
 
+.promo {
+  display: flex;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+.promo:nth-child(2n) {
+  flex-wrap: wrap-reverse;
+}
+@media (min-width: 640px) {
+  .promo {
+    flex-wrap: nowrap;
+  }
+  .promo:nth-child(2n) {
+    flex-wrap: nowrap;
+  }
+}
+.promo__left {
+  text-align: center;
+  flex: 1 1 100%;
+  padding: 1rem;
+}
+@media (min-width: 640px) {
+  .promo__left {
+    text-align: right;
+    flex: 1 1 50%;
+  }
+}
+.promo__right {
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 100%;
+}
+@media (min-width: 640px) {
+  .promo__right {
+    text-align: left;
+    flex: 1 1 50%;
+  }
+}
+.promo__image {
+  width: 100%;
+}
+.promo__title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.promo__subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.promo__blurb {
+  line-height: 1.5;
+  font-weight: 300;
+}
