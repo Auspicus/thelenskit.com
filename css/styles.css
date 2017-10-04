@@ -109,7 +109,12 @@ html, body {
 }
 .section__title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media (min-width: 640px) {
+  .section__title {
+    font-size: 3rem;
+  }
 }
 
 .promo {
@@ -155,8 +160,13 @@ html, body {
 }
 .promo__title {
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
+}
+@media (min-width: 640px) {
+  .promo__title {
+    font-size: 2rem;
+  }
 }
 .promo__subtitle {
   font-size: 1.25rem;
@@ -165,4 +175,80 @@ html, body {
 .promo__blurb {
   line-height: 1.5;
   font-weight: 300;
+  margin-bottom: 0;
+}
+
+.form-two-column {
+  max-width: 320px;
+  margin: 2rem auto;
+}
+@media (min-width: 640px) {
+  .form-two-column {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 560px;
+    justify-content: space-between;
+  }
+}
+.form-two-column__item {
+  flex: 0 0 47.5%;
+  margin-bottom: 1rem;
+}
+.form-two-column__item:last-child {
+  margin-bottom: 0;
+}
+
+.field {
+  position: relative;
+  border-bottom: 3px solid #3c3c3c;
+}
+.field__label {
+  position: absolute;
+  font-size: .85rem;
+  font-weight: 700;
+  top: 1.25rem;
+  left: .5rem;
+  transition: top .3s ease, font-size .3s ease;
+}
+.field__label--active {
+  font-size: .75rem;
+  top: 0;
+}
+.field__label--select {
+  font-size: .75rem;
+  font-weight: 700;
+  margin-left: .5rem;
+}
+.field__input {
+  border: 0;
+  width: 100%;
+  padding: 1.25rem .5rem .5rem;
+  font-size: .95rem;
+}
+.field__input--select {
+  background: 0;
+  border: 0;
+  border-radius: 0;
+  margin-top: .6rem;
+  color: #3c3c3c;
+  font-size: .95rem;
+  width: 100%;
+}
+
+.submit {
+  display: block;
+  border: 0;
+  margin: auto;
+  background: #3c3c3c;
+  color: white;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+.footer {
+  background: #3c3c3c;
+  color: #fff;
+  font-size: .75rem;
+  padding: 2rem;
+  margin-top: 4rem;
 }
