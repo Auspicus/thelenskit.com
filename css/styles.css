@@ -5,6 +5,8 @@ html, body {
   margin: 0;
   font-family: Montserrat, sans-serif;
   color: #3c3c3c;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Splash */
