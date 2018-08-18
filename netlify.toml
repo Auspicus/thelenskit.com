@@ -1,0 +1,6 @@
+[build]
+  command = "echo \"Build\""
+  publish = "dist"
+
+[context.deploy-preview]
+  command = "echo \"Preview\""
